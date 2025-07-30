@@ -1,0 +1,178 @@
+/**
+ * Admin Styles for Lottery Meta Boxes
+ * Enhances the appearance of custom fields in WordPress admin
+ */
+
+/* Meta box styling */
+#lottery_draw_data .form-table {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#lottery_draw_data .form-table th {
+    background: #f8f9fa;
+    padding: 15px;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 1px solid #e9ecef;
+    width: 200px;
+}
+
+#lottery_draw_data .form-table td {
+    padding: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+#lottery_draw_data input[type="text"],
+#lottery_draw_data input[type="number"],
+#lottery_draw_data input[type="date"],
+#lottery_draw_data textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #e9ecef;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+#lottery_draw_data input[type="text"]:focus,
+#lottery_draw_data input[type="number"]:focus,
+#lottery_draw_data input[type="date"]:focus,
+#lottery_draw_data textarea:focus {
+    outline: none;
+    border-color: #007cba;
+    box-shadow: 0 0 0 3px rgba(0, 124, 186, 0.1);
+}
+
+#lottery_draw_data textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: 'Courier New', monospace;
+}
+
+/* Admin page styling */
+.lottery-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.lottery-admin-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lottery-admin-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.lottery-admin-card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.lottery-admin-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.lottery-admin-card .button-primary {
+    background: #007cba;
+    border-color: #007cba;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.lottery-admin-card .button-primary:hover {
+    background: #005a87;
+    border-color: #005a87;
+}
+
+/* Post type icons */
+.wp-menu-image.dashicons-tickets-alt:before {
+    content: "\f524";
+    color: #82878c;
+}
+
+.wp-has-current-submenu .wp-menu-image.dashicons-tickets-alt:before,
+.current-menu-ancestor .wp-menu-image.dashicons-tickets-alt:before {
+    color: #fff;
+}
+
+/* Custom post type list styling */
+.post-type-euromillions .wp-list-table .column-title strong a,
+.post-type-primitiva .wp-list-table .column-title strong a,
+.post-type-bonoloto .wp-list-table .column-title strong a,
+.post-type-elgordo .wp-list-table .column-title strong a,
+.post-type-eurodreams .wp-list-table .column-title strong a,
+.post-type-lototurf .wp-list-table .column-title strong a,
+.post-type-quintupleplus .wp-list-table .column-title strong a,
+.post-type-nacional .wp-list-table .column-title strong a,
+.post-type-quiniela .wp-list-table .column-title strong a,
+.post-type-quinigol .wp-list-table .column-title strong a {
+    font-weight: 600;
+    color: #007cba;
+}
+
+/* Help text styling */
+.lottery-help-text {
+    color: #666;
+    font-style: italic;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Field groups */
+.lottery-field-group {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.lottery-field-group h4 {
+    margin-top: 0;
+    color: #333;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 10px;
+}
+
+/* Responsive admin */
+@media (max-width: 768px) {
+    .lottery-admin-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    #lottery_draw_data .form-table th,
+    #lottery_draw_data .form-table td {
+        display: block;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    #lottery_draw_data .form-table th {
+        background: none;
+        font-weight: 600;
+        border-bottom: none;
+        padding-bottom: 5px;
+    }
+    
+    #lottery_draw_data .form-table td {
+        border-bottom: 1px solid #e9ecef;
+        padding-top: 0;
+    }
+}
+
