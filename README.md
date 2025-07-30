@@ -1,6 +1,7 @@
 # 🎲 Spanish Lottery Results – Kadence Child Theme
 
-<img width="1349" height="3459" alt="image" src="https://github.com/user-attachments/assets/9d5d045a-4390-4225-b535-8363b75c0f8f" />
+<img width="1349" height="3427" alt="image" src="https://github.com/user-attachments/assets/60c63116-48a0-466e-abc4-327313d71efd" />
+
 
 
 A modern, fast, and optimized WordPress child theme for Spanish state lottery results, built for [Kadence Theme](https://www.kadencewp.com/).  
